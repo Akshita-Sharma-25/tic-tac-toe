@@ -74,12 +74,12 @@ def board_full(board):
 def player_choice(board, player):
     position = 0
     while position not in [1,2,3,4,5,6,7,8,9] or not free_space(board, position):
-        position = int(input(f'Choose your next position {player}: (1-9) '))
+        position = int(input(f'Choose your next position {player}: (1-9)'))
     return position
 
 # asking for replay
 def replay():
-    result = input('Do you want to play again? Enter Y or N: ').upper
+    result = input('Do you want to play again? Enter Y or N: ').upper()
     if result == 'Y':
         return True
     else:
